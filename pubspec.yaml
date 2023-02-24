@@ -1,0 +1,21 @@
+name: calender_flutter_aj
+description: A very simple and easy to use package which can be used to show calender in flutter application
+version: 1.0.0+1
+homepage: https://github.com/ammarjavedofficial/circular_rotation_flutter
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
