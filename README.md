@@ -1,12 +1,12 @@
-# calender_flutter_aj
+# calendar_flutter_aj
 
 This package can be used to show calender in flutter application
 
-![calender_flutter_aj](https://ammarjaved.com/wp-content/uploads/2023/02/calender_flutter_aj.gif)
+![calendar_flutter_aj](https://ammarjaved.com/wp-content/uploads/2023/02/calender_flutter_aj.gif)
 
 ## Example
 ```
-  CalenderFlutterAj(
+  CalendarFlutterAj(
               selectedDate: (selectedDate) {
                 //
               },
@@ -37,7 +37,6 @@ This package can be used to show calender in flutter application
               showMonthGradient: true,
               showYearGradient: true,
               dividerColor: Colors.white,
-              selectedDayColor: Colors.white,
               calenderGradient: const LinearGradient(
                 colors: [
                   Color(0xff5F94B9),

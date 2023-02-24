@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CalenderFlutterAj extends StatefulWidget {
-  const CalenderFlutterAj({
+class CalendarFlutterAj extends StatefulWidget {
+  const CalendarFlutterAj({
     super.key,
     required this.selectedDate,
     this.backArrow,
@@ -69,11 +69,11 @@ class CalenderFlutterAj extends StatefulWidget {
   final Widget? selectedDayWidget;
 
   @override
-  // _CalenderFlutterAjState createState() => _CalenderFlutterAjState();
-  State<CalenderFlutterAj> createState() => _CalenderFlutterAjState();
+  // _CalendarFlutterAjState createState() => _CalendarFlutterAjState();
+  State<CalendarFlutterAj> createState() => _CalendarFlutterAjState();
 }
 
-class _CalenderFlutterAjState extends State<CalenderFlutterAj> {
+class _CalendarFlutterAjState extends State<CalendarFlutterAj> {
   late DateTime _selectedDate;
 
   @override

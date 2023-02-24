@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Center(
-            child: CalenderFlutterAj(
+            child: CalendarFlutterAj(
               selectedDate: (selectedDate) {
                 calenderSelectedDate = selectedDate;
                 if (kDebugMode) {

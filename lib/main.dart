@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
 import 'src/calender_flutter_aj.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return CalenderFlutterAj(
+    return CalendarFlutterAj(
       selectedDate: (selectedDate) {
         calenderSelectedDate = selectedDate;
         if (kDebugMode) {
