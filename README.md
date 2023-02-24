@@ -2,9 +2,7 @@
 
 This package can be used to show calender in flutter application
 
-https://user-images.githubusercontent.com/54344194/221199967-c6e6f230-767c-4aad-a9a2-4f0212028659.mp4
-
-
+![calender_flutter_aj](https://ammarjaved.com/wp-content/uploads/2023/02/calender_flutter_aj.gif)
 
 ## Example
 ```
