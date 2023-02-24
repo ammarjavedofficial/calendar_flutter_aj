@@ -8,10 +8,7 @@ This package can be used to show calender in flutter application
 ```
   CalenderFlutterAj(
               selectedDate: (selectedDate) {
-                calenderSelectedDate = selectedDate;
-                if (kDebugMode) {
-                  print(selectedDate);
-                }
+                //
               },
               backArrow: const DecoratedBox(
                 decoration: BoxDecoration(
@@ -41,10 +38,6 @@ This package can be used to show calender in flutter application
               showYearGradient: true,
               dividerColor: Colors.white,
               selectedDayColor: Colors.white,
-              selectedDayWidget: Text(
-                calenderSelectedDate!.day.toString(),
-                style: const TextStyle(color: Colors.white),
-              ),
               calenderGradient: const LinearGradient(
                 colors: [
                   Color(0xff5F94B9),
