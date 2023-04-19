@@ -4,6 +4,7 @@ class CalendarFlutterAj extends StatefulWidget {
   const CalendarFlutterAj({
     super.key,
     required this.selectedDate,
+    required this.dateTime,
     this.backArrow,
     this.calenderGradient,
     this.calenderSelectedDateBackgroundcolor,
@@ -37,6 +38,7 @@ class CalendarFlutterAj extends StatefulWidget {
   });
 
   final void Function(DateTime) selectedDate;
+  final DateTime dateTime;
   final Gradient? calenderGradient;
   final Gradient? monthGradient;
   final Gradient? yearGradient;
@@ -79,7 +81,7 @@ class _CalendarFlutterAjState extends State<CalendarFlutterAj> {
   @override
   void initState() {
     super.initState();
-    _selectedDate = DateTime.now();
+    _selectedDate = widget.dateTime;
   }
 
   @override
@@ -294,7 +296,7 @@ class _CalendarFlutterAjState extends State<CalendarFlutterAj> {
             borderRadius: BorderRadius.circular(15),
           ),
           child: Container(
-            height: 390,
+            height: MediaQuery.of(context).size.height * 0.35,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               color: widget.monthBackgroundColor ?? Colors.white,
@@ -305,6 +307,7 @@ class _CalendarFlutterAjState extends State<CalendarFlutterAj> {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
                     widget.monthPopHeadingText ?? "Select a Month",
@@ -317,7 +320,7 @@ class _CalendarFlutterAjState extends State<CalendarFlutterAj> {
                     physics: const NeverScrollableScrollPhysics(),
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3,
+                      crossAxisCount: 4,
                     ),
                     itemBuilder: (BuildContext context, int index) {
                       return GestureDetector(
